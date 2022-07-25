@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         catViewModel.onCreate()
 
         catViewModel.catModel.observe(this, Observer { currentCat ->
-            println(currentCat.toString())
             supportFragmentManager.beginTransaction()
                 .add(R.id.activity_menu, LandingFragment(currentCat)).commit()
         })

@@ -38,5 +38,5 @@ data class CatModel(
     val wikipedia_url : String,
     val hypoallergenic : String,
     val reference_image_id : String,
-    val image : ImageModel
+    val image : ImageModel?
 )

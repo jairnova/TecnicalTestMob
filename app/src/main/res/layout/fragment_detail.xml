@@ -4,30 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="15dp"
     tools:context=".testmob.ui.view.DetailFragment">
 
-    <TextView
-        android:id="@+id/title"
-        style="@style/TextTitle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/title_catbreeds"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btAtras"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:contentDescription="@string/atras"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/title_catbreeds" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageSearch"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_margin="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        app:srcCompat="@drawable/ic_baseline_search_24" />
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/gato"
+        android:contentDescription="@string/imagen_gato" />
 
     <ScrollView
         android:id="@+id/scroll"
@@ -36,55 +47,50 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="20dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txDescripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txRaza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txPais"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txInteligencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txAdaptabilidad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/txTiempoVida"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:textSize="15sp" />
 
         </LinearLayout>

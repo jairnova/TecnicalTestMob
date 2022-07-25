@@ -3,5 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_catbreeds">Catbreeds</string>
+    <string name="txMasInfo">Más&#8230;</string>
+    <string name="atras">atras</string>
+    <string name="imagen_gato">imagen gato</string>
+
 
 </resources>
